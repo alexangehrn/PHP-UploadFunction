@@ -5,6 +5,7 @@
         "php": "^5.3.3 || ^7.0"
     },
     "type": "library",
+    "licence": "MIT",
     "homepage": "https://github.com/alexangehrn/upload",
     "authors": [
         {

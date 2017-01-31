@@ -1,0 +1,19 @@
+{
+    "name": "alexangehrn/upload_angehrn",
+    "description": "Simple Upload Library",
+    "require": {
+        "php": "^5.3.3 || ^7.0"
+    },
+    "type": "library",
+    "homepage": "https://github.com/alexangehrn/upload",
+    "authors": [
+        {
+            "name": "Alexandra Angehrn",
+            "email": "alexandra.angehrn@eemi.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    }
+}

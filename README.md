@@ -1,16 +1,16 @@
-#Groupe1 : D'Harcourt & Angehrn
+# Groupe1 : D'Harcourt & Angehrn
 
 Création d'une fonction d'upload modulable et réutilisable en POO.
 
 
-##Adresse de Prod
+## Adresse de Prod
 
 [v1](http://angehrn.etudiant-eemi.com/perso/groupe1_dharcourt_angehrn/uploadView.php)
 
 [v2](http://angehrn.etudiant-eemi.com/perso/groupe1_dharcourt_angehrn_v2/groupe1_dharcourt_angehrn/example/uploadView.php)
 
 
-###Fonctionnalités Générales
+### Fonctionnalités Générales
 
 * Multi upload
 * Vérification de format
@@ -19,7 +19,7 @@ Création d'une fonction d'upload modulable et réutilisable en POO.
 -> Avec choix du crop (largeur, hauteur, position du crop)
 
 
-###Attributs de la class upload
+### Attributs de la class upload
 
 * fileName  - correspond au nom du fichier
 * fileTmpName  - correspond au nom du fichier temporaire
@@ -42,7 +42,7 @@ Création d'une fonction d'upload modulable et réutilisable en POO.
  Tous ces attributs sont private sauf log
 
 
-###Arguments de la methode construct
+### Arguments de la methode construct
 
 Cette methode va permettre de :
 * initialiser toutes les données
@@ -55,7 +55,7 @@ Si c'est une image :
 * redimensionner l'image ou la rogner
 
 
-###Methode getLogs
+### Methode getLogs
 
 Afin d'avoir des retours sur le déroulement de l'upload écrivez le code suivant:
 $logs = $upload->getLogs();
@@ -64,7 +64,7 @@ echo $logs;
 Cette méthode va permettre d'afficher les différentes étapes réalisées par l'upload
 
 
-##Utilisation de la fonction
+## Utilisation de la fonction
 
 Vous pourrez utiliser la fonction de la manière suivante :
 
@@ -74,7 +74,7 @@ Vous pourrez utiliser la fonction de la manière suivante :
     $upload = new Upload($file['name'],$file['tmp_name'],$file['size'],$size,$file['type'],$dossier,$rectangleHeight,$rectangleWidth,$carreDim,$form,$position,$ext,$name);
 
 ```
-###Avec comme arguments
+### Avec comme arguments
 
 * $file['name'] étant le nom du fichier uploadé ($\_FILES["name"])
 * $file['tmp_name'] étant le nom temporaire du fichier uploadé ($\_FILES["tmp_name"])
@@ -97,7 +97,7 @@ Vous pourrez utiliser la fonction de la manière suivante :
 * $name étant le nom choisit pour le fichier final (optionnel)
 
 
-###Amélioration v2
+### Amélioration v2
 
 * Création de l'argument log et de la methode getLogs permettant d'avoir un retour sur les etapes de l'upload et de pouvoir l'afficher
 * Séparation de la fonction upload elle même et de la page de test dans les dossiers respectifs src/ et example/

@@ -1,4 +1,4 @@
-# Groupe1 : D'Harcourt & Angehrn
+# Fonction Upload
 
 Création d'une fonction d'upload modulable et réutilisable en POO.
 
